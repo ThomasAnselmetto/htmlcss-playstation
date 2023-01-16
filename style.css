@@ -37,6 +37,7 @@ img {
 .box {
     border: 1px solid black;
     height: 5rem;
+
     background-color: pink;
 }
 
@@ -58,11 +59,25 @@ img {
     height: 18rem;
 }
 
+.second-jumbo {
+    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
+    height: 18rem;
+}
+
 /* UTILS */
 .btn-buy {
     color: white;
     background-color: #CD3D0F;
     padding: 7px 10px;
-    border: 1px solid trasparent;
+    border: 1px solid #CD3D0F;
+    border-radius: 25px;
+}
+
+.btn-infos {
+    color: white;
+    background-color: #2D64E6;
+    padding: 7px 10px;
+    border: 1px solid #2D64E6;
     border-radius: 25px;
 }
