@@ -87,3 +87,15 @@ img {
     max-width: 3px;
 
 }
+
+.btn-infos.another {
+    color: #2D64E6;
+    background-color: #D9DADC;
+    border: 1px solid #D9DADC;
+}
+
+.btn-infos.another2 {
+    color: black;
+    background-color: white;
+    border: 1px solid white;
+}
