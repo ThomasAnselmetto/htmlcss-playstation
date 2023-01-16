@@ -1,1 +1,39 @@
+/* debug */
+.upper-header {
+    background-color: #000000;
+    color: white;
+}
+
+.main-header {
+    background-color: aqua;
+    height: 5rem;
+}
+
+.section-debug {
+    height: 50rem;
+    background-color: red;
+}
+
+.black {
+    height: 20rem;
+    background-color: #000000;
+}
+
+.blue {
+    height: 20rem;
+    background-color: blue;
+}
+
+
+
+.box {
+    background-color: pink;
+    height: 8rem;
+}
+
+.rompi-il-cerchio {
+    align-self: flex-end;
+
+}
+
 /* UTILS */
