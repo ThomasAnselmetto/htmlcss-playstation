@@ -36,7 +36,8 @@ img {
 
 .box {
     border: 1px solid black;
-    height: 5rem;
+    height: 10rem;
+    width: 10rem;
 
     background-color: pink;
 }
@@ -80,4 +81,9 @@ img {
     padding: 7px 10px;
     border: 1px solid #2D64E6;
     border-radius: 25px;
+}
+
+.fa-regular::before {
+    max-width: 3px;
+
 }
