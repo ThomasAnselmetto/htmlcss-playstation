@@ -5,23 +5,19 @@
 }
 
 .main-header {
-    background-color: aqua;
+    background-color: lightblue;
     height: 5rem;
 }
 
-.section-debug {
-    height: 50rem;
-    background-color: red;
-}
 
 .black {
-    height: 20rem;
-    background-color: #000000;
+    height: 30rem;
+    background-color: grey;
 }
 
 .blue {
-    height: 20rem;
-    background-color: blue;
+    height: 30rem;
+    background-color: lightblue;
 }
 
 
@@ -29,6 +25,7 @@
 .box {
     background-color: pink;
     height: 8rem;
+    border: 1px solid black;
 }
 
 .rompi-il-cerchio {
