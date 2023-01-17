@@ -111,7 +111,6 @@ img {
 
 .btn.login {
     text-align: center;
-    color: white;
     background-color: #363636;
     padding: 7px 10px;
     border: 1px solid #363636;
@@ -142,14 +141,6 @@ img {
     padding: 5px 0;
     border: 1px solid #2D64E6;
     border-radius: 25px;
-}
-
-
-
-
-.fa-regular::before {
-    max-width: 3px;
-
 }
 
 .btn-infos.another {
