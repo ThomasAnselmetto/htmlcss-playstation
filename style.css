@@ -1,4 +1,8 @@
 /* reset */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -19,36 +23,60 @@ img {
 }
 
 /* main-header */
-#main-header {
-    height: 5rem;
+.lens-img {
+    max-width: 50%;
 }
 
+
 /* main-jumbo */
-.rompi-il-cerchio {
+
+
+
+.jumbotron-sfondo {
+    background-image: url(./img/jumbo-bg.png);
+    background-size: cover;
+
+}
+
+.jumbo-position {
     align-self: flex-end;
     color: white;
+}
+
+.container.jumbotron {
+    height: 70vh;
 }
 
 /* playstation5 *
 
 
 /* second-jumbo */
+.jumbotron-sfondo-2 {
+    background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
+    background-size: cover;
 
+}
 
 /* new-releases*/
-
+#new-releases {
+    background-color: #1F1F1F;
+}
 
 /* playstation4 */
 
 
 /* playstation-plus */
-
+#playstation-plus {
+    background-color: #BEBCBB;
+}
 
 /* play-store */
 
 
 /* playstation-now */
-
+#playstation-now {
+    background-color: #161C3B;
+}
 
 /* upper-footer */
 
@@ -66,17 +94,11 @@ img {
 
 
 
-.main-jumbo {
-
-    background-image: url(./img/jumbo-bg.png);
-    background-size: cover;
-    height: 18rem;
-}
 
 .second-jumbo {
     background-image: url(./img/it-takes-two-hero-banner-desktop.jpg);
     background-size: cover;
-    height: 18rem;
+
 }
 
 /* UTILS */
@@ -86,6 +108,16 @@ img {
     background-color: #CD3D0F;
     padding: 7px 10px;
     border: 1px solid #CD3D0F;
+    border-radius: 25px;
+    margin: 0 0 3rem 0;
+}
+
+.btn.login {
+    text-align: center;
+    color: white;
+    background-color: #363636;
+    padding: 7px 10px;
+    border: 1px solid #363636;
     border-radius: 25px;
 }
 
@@ -107,6 +139,9 @@ img {
     border-radius: 25px;
 }
 
+
+
+
 .fa-regular::before {
     max-width: 3px;
 
@@ -127,4 +162,38 @@ img {
 .form-select {
     color: white;
     background-color: transparent;
+}
+
+.mini-logo-jumbo {
+    max-width: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.mini-logo-jumbo-custom {
+    width: 50%;
+    margin-bottom: 1.5rem;
+}
+
+.mini-logo-jumbo-custom2 {
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+.fa-trademark {
+    font-size: 7px;
+    position: relative;
+    bottom: 5px;
+    left: 2px;
+}
+
+.fa-registered {
+    font-size: 15px;
+    position: relative;
+    bottom: 8px;
+    left: -6px;
+}
+
+.style-country {
+    color: white;
+    background-color: #00439C;
 }
