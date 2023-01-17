@@ -12,46 +12,59 @@ img {
     max-width: 100%;
 }
 
-/* debug */
-
-.upper-header {
+/* upper-header */
+#upper-header {
     background-color: #000000;
     color: white;
 }
 
-.main-header {
-    background-color: lightblue;
+/* main-header */
+#main-header {
     height: 5rem;
 }
 
-.black {
-    height: 30rem;
-    background-color: grey;
-}
-
-.blue {
-    height: 30rem;
-    background-color: lightblue;
-}
-
-.box {
-    border: 1px solid black;
-    height: 10rem;
-    width: 10rem;
-
-    background-color: pink;
-}
-
+/* main-jumbo */
 .rompi-il-cerchio {
     align-self: flex-end;
     color: white;
-
-
 }
 
-.debug {
-    background-color: blueviolet;
+/* playstation5 *
+
+
+/* second-jumbo */
+
+
+/* new-releases*/
+
+
+/* playstation4 */
+
+
+/* playstation-plus */
+
+
+/* play-store */
+
+
+/* playstation-now */
+
+
+/* upper-footer */
+
+
+/* bottom-footer */
+#bottom-footer {
+    background-color: #00439C;
 }
+
+
+
+
+
+
+
+
 
 .main-jumbo {
 
@@ -68,6 +81,7 @@ img {
 
 /* UTILS */
 .btn-buy {
+    text-align: center;
     color: white;
     background-color: #CD3D0F;
     padding: 7px 10px;
@@ -76,9 +90,19 @@ img {
 }
 
 .btn-infos {
+    text-align: center;
     color: white;
     background-color: #2D64E6;
     padding: 7px 10px;
+    border: 1px solid #2D64E6;
+    border-radius: 25px;
+}
+
+.btn-infos.small {
+    width: 45%;
+    color: white;
+    background-color: #2D64E6;
+    padding: 4px 0;
     border: 1px solid #2D64E6;
     border-radius: 25px;
 }
@@ -98,4 +122,9 @@ img {
     color: black;
     background-color: white;
     border: 1px solid white;
+}
+
+.form-select {
+    color: white;
+    background-color: transparent;
 }

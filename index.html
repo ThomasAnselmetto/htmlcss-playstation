@@ -21,7 +21,7 @@
 <body>
     <!-- creo header diviso in due e poi gioco sulle colonne per suddividere le varie parti della nav del main-header -->
     <header>
-        <div class="upper-header">
+        <div id="upper-header">
 
             <div class="container-fluid">
 
@@ -34,47 +34,67 @@
             </div>
         </div>
 
-        <div class="main-header">
+        <div id="main-header">
 
-            <div class="container-fluid">
-                <div class="row row-cols-2 row-cols-lg-12 justify-content-between">
-                    <div class="col-2">
-
-                    </div>
-
-
-                    <div class="col-2">
-
-                        <div class="collapse" id="navbarToggleExternalContent">
-                            <div class="bg-dark p-4">
-                                <h5 class="text-white">My PlayStation</h5>
-                                <span class="text-muted">Accedi</span>
-                                <span></span>
-                            </div>
-                        </div>
-                        <nav class="navbar navbar-dark bg-light d-lg-none">
-                            <div class="container-fluid">
-                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#navbarToggleExternalContent"
-                                    aria-controls="navbarToggleExternalContent" aria-expanded="false"
-                                    aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                            </div>
-                        </nav>
+            <!-- <div class="container-fluid"> risulta inutile sulla nav perche` ha gia` un suo container di fatto-->
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#"><img src="./img/play_logo.svg" alt="playstation-logo/img"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active">Disabled</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
                     </div>
                 </div>
+            </nav>
 
-            </div>
+            <!-- </div> -->
         </div>
     </header>
 
     <main>
 
-        <section class="black">
+        <section id="main-jumbo">
 
-            <div class="container">
-                <div class="row main-jumbo">
+            <div class="jumbotron-container">
+                <div class="row">
                     <div class="col-12 col-lg-4 rompi-il-cerchio">
                         <div class="box">
                             <img class="d-block" src="./img/returnal-hero-banner-logo.png"
@@ -128,7 +148,7 @@
         </section>
 
 
-        <section class="blue">
+        <section id="playstation-5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 col-sm-10 col-md-8 col-lg-6">
@@ -146,7 +166,7 @@
                         <div class="box">
                             <h2>Console Playstation 5</h2>
                             <p>Sperimenta la nuova generazione di incredibili giochi PlayStation.</p>
-                            <button type="button" class="btn-infos"></button>
+                            <button type="button" class="btn-infos">Maggiori informazioni</button>
                         </div>
                     </div>
                     <div class="col-12 col-md-7">
@@ -201,7 +221,7 @@
             </div>
         </section>
 
-        <section class="second-jumbo blue">
+        <section id="second-jumbo">
             <div class="container">
                 <div class="row second-jumbo">
                     <div class="col-12 col-lg-4 rompi-il-cerchio">
@@ -219,7 +239,7 @@
 
         </section>
 
-        <section class="black">
+        <section id="new-releases">
 
             <div class="container">
                 <div class="row">
@@ -311,7 +331,7 @@
 
         </section>
 
-        <section class="blue">
+        <section id="playstation-4">
 
             <div class="container">
 
@@ -332,7 +352,7 @@
                         <div class="box">
                             <img src="./img/ps4-slim-homepage-image-block.jpg" alt="ps4/img">
                             <p></p>
-                            <div class="btn-infos w-50">Scopri di più</div>
+                            <div class="btn-infos small">Scopri di più</div>
 
                         </div>
                     </div>
@@ -340,7 +360,7 @@
                         <div class="box">
                             <img src="./img/double11-202010-tw-psvr.jpg" alt="PlayStationVR/img">
                             <p></p>
-                            <div class="btn-infos w-50">Scopri di più</div>
+                            <div class="btn-infos small">Scopri di più</div>
 
                         </div>
                     </div>
@@ -348,7 +368,7 @@
                         <div class="box">
                             <img src="./img/dualshock-4-listing-thumb.jpg" alt="Accessori/img">
                             <p></p>
-                            <div class="btn-infos w-50">Scopri di più</div>
+                            <div class="btn-infos small">Scopri di più</div>
 
                         </div>
                     </div>
@@ -358,14 +378,14 @@
 
         </section>
 
-        <section class="black">
+        <section id="playstation-plus">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="box debug">
                             <img src="./img/ps-plus-logo.png" alt="ps-plus-logo">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam. Incidunt iusto
-                                quidem aspernatur provident.</p>
+                            <p>Migliora la tua esperienza PlayStation con l'accesso a multigiocatore online,giochi
+                                mensili,sconti esclusivi e altro ancora</p>
                             <button type="button" class="btn-infos another">Esplora PlayStation Now</button>
                         </div>
                     </div>
@@ -379,7 +399,7 @@
             </div>
         </section>
 
-        <section class="blue">
+        <section id="play-store">
             <div class="container">
 
                 <div class="row justify-content-center">
@@ -415,14 +435,14 @@
             </div>
         </section>
 
-        <section class="black">
+        <section id="playstation-now">
             <div class="container">
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <div class="box debug">
                             <img src="./img/ps-now-logo-two-column.png" alt="ps-now-logo">
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum, quisquam. Incidunt iusto
-                                quidem aspernatur provident.</p>
+                            <p>Ottieni l'accesso immediato a una vastissima raccolta di oltre 800 giochi per PS4,PS3 e
+                                PS2 su PS4 o PC Windows,con nuovi titoli aggiunti ogni mese.</p>
                             <button type="button" class="btn-infos another2">Esplora PlayStation Now</button>
                         </div>
                     </div>
@@ -437,7 +457,7 @@
 
 
 
-        <footer class="upper-footer blue">
+        <footer id="upper-footer">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-10 col-sm-8 col-md-6 col-lg-4">
@@ -470,47 +490,56 @@
             </div>
         </footer>
 
-        <footer class="bottom-footer black">
-            <div class="container">
+        <footer id="bottom-footer">
+            <div class="container text-white">
                 <div class="row flex-column flex-md-row">
-                    <div class="col-4 col-md-12 col-lg-2">
+                    <div class="col-4 col-md-2 col-lg-2">
                         <div class="box">
-                            <img src="" alt="">
+                            <img src="./img/ps-footer.svg" alt="logo-ps-footer/img">
+                            <div class="select d-flex">
+                                <i class="fa-solid fa-globe"></i>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Country/Region:</option>
+                                    <option value="1">Italy</option>
+                                    <option value="2">German</option>
+                                    <option value="3">Spain</option>
+                                </select>
+                            </div>
                         </div>
                     </div>
                     <div class="col-4 col-lg-2 offset-lg-4">
                         <div class="box">
                             <ul>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-4 col-lg-2">
                         <div class="box">
                             <ul>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-4 col-lg-2">
                         <div class="box">
                             <ul>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
-                                <li><a href="#">lorem</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
+                                <li><a href="#">Footer Link n</a></li>
                             </ul>
                         </div>
                     </div>
@@ -518,7 +547,9 @@
 
                 <div class="row">
                     <div class="col-12 col-lg-6">
-                        <div class="box"></div>
+                        <div class="box">
+                            <img src="./img/sie-logo.svg " alt="sony-logo/img">
+                        </div>
                     </div>
                 </div>
             </div>
