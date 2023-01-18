@@ -277,3 +277,7 @@ footer>*li {
     position: relative;
     bottom: 30px;
 }
+
+.release:hover {
+    filter: invert(1);
+}
