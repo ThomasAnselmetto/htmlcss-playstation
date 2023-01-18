@@ -25,7 +25,7 @@ footer>*li {
 }
 
 /* upper-header */
-#upper-header {
+.upper-header {
     background-color: #000000;
     color: white;
 }
@@ -37,7 +37,9 @@ footer>*li {
 
 
 /* main-jumbo */
-
+#main-jumbo {
+    padding-top: 60px;
+}
 
 
 .jumbotron-sfondo {
@@ -99,9 +101,7 @@ footer>*li {
 }
 
 /* upper-footer */
-#upper-footer {
-    height: 28rem;
-}
+
 
 /* bottom-footer */
 #bottom-footer {
