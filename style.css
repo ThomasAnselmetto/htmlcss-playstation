@@ -20,6 +20,10 @@ img {
     max-width: 100%;
 }
 
+footer>*li {
+    margin: 0.5rem 0;
+}
+
 /* upper-header */
 #upper-header {
     background-color: #000000;
@@ -52,7 +56,15 @@ img {
     height: 70vh;
 }
 
-/* playstation5 *
+/* playstation5 */
+.box-items {
+    filter: opacity(0.5);
+}
+
+.box-items:active {
+    filter: opacity(1);
+    border-bottom: 3px solid #00439C;
+}
 
 
 /* second-jumbo */
@@ -87,7 +99,9 @@ img {
 }
 
 /* upper-footer */
-
+#upper-footer {
+    height: 28rem;
+}
 
 /* bottom-footer */
 #bottom-footer {
@@ -210,11 +224,56 @@ img {
     background-color: #00439C;
 }
 
-.bounced {
-    transition-property: padding-bottom;
-    transition-duration: 2s;
+.bounced1 {
+    position: relative;
 }
 
-.bounced:hover {
-    padding-bottom: 30px;
+.bounced1:hover {
+    position: relative;
+    bottom: 30px;
+}
+
+.bounced2 {
+    position: relative;
+}
+
+.bounced2:hover {
+    position: relative;
+    bottom: 30px;
+}
+
+.bounced3 {
+    position: relative;
+}
+
+.bounced3:hover {
+    position: relative;
+    bottom: 30px;
+}
+
+.bounced4 {
+    position: relative;
+}
+
+.bounced4:hover {
+    position: relative;
+    bottom: 30px;
+}
+
+.bounced5 {
+    position: relative;
+}
+
+.bounced5:hover {
+    position: relative;
+    bottom: 30px;
+}
+
+.bounced6 {
+    position: relative;
+}
+
+.bounced6:hover {
+    position: relative;
+    bottom: 30px;
 }
